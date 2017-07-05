@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Header } from '../components/Header';
 import { StatusBar } from 'react-native';
 
 import { Container } from '../components/Container';
@@ -31,12 +32,19 @@ class Home extends Component {
     console.log('press swap currency')
   };
 
+  handleOptionsPress = () => {
+    console.log('handle options press');
+  };
+
   render() {
     return (
       <Container>
         <StatusBar 
           translucent={false} 
           barStyle="light-content" 
+        />
+        <Header
+          onPress={this.handleOptionsPress}
         />
         <Logo/>
         <InputWithButton 
