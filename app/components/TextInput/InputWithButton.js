@@ -1,5 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { View, Text, TouchableHighlight, TextInput } from 'react-native';
+import PropTypes from 'prop-types';
 import color from 'color';
 
 import styles from './styles';
